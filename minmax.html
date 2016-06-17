@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>Min Max</title>
+<head>
+	<title>Min Max</title>
+</head>
+<body>
+<script type="text/javascript">
+	function minmax()
+	{
+		max=0;
+		min=1000000;
+		for(i=0;i<arguments.length;i++)
+		{
+			if(arguments[i]>max)
+				max=arguments[i];
+			if(arguments[i]<min)
+				min=arguments[i];
+		}
+		document.write(min);
+		document.write("<br>");
+		document.write(max);
+	}
+	minmax(2,3,4,5,6,7,78,8,5,4,78,5,4,7,4,6);
+</script>
+</body>
+</html>
